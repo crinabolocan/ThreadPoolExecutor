@@ -1,3 +1,4 @@
+== Simularea unui planificator al firelor de execuție al unui procesor ==
 
 Am declarat structura de Thread, apoi de Task.
 Functia de freeTask nu o folosesc, dar imi trebuia ca paramentru 
