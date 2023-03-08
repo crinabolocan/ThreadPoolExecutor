@@ -1,0 +1,25 @@
+
+Am declarat structura de Thread, apoi de Task.
+Functia de freeTask nu o folosesc, dar imi trebuia ca paramentru 
+la dequeue.
+Ordonare_task are ca paramentru o coada, declar o stiva. Parcurg 
+coada si verific prioritatea, timpul de executie si ID-ul. Folosesc 
+dequeue si enqueue ca sa scot si sa introduc in coada la inceput si 
+dupa din stiva. Prin push introduc in stiva auxiliara elementele pe 
+care le-am gasit corespunzatoare conditiilor.
+In add_task citesc numarul de taskuri, prioritatea, timpul de executie.
+Parcurg cate task-uri trebuie sa merg, verific daca a mai existat acelasi
+si maresc indecele. Apoi introduc in task, structura, tot ce am citit, 
+la indecele la care nu am inca niciun ID. Introduc in coada de asteptare
+structura task cu valorile corespunzatoare. Afisez de la ID-ul la care am 
+introdus pana la numarul pe care l-am introdus.
+Get_task parcurge coada, cand gaseste ID-ul citit afiseaza.
+Get_thread face acelasi lucru doar ca din structura task intra in 
+structura thread sa verifice ID-ul de acolo (daca exista sau nu, mai intai ,
+ca sa ii stiu starea).
+Print_waiting apeleaza functia de ordonare, apoi merg prin coada ordonata, 
+afisez ceea ce imi e cerut din task.
+La fel si pentru print_running si pentru print_finished. La testele 
+care mi-au trecut coada de running si finished era goala, si de aceea 
+nu mi-au trebuit si celelalte functii pe care nu le-am facut.
+Apoi urmeaza main-ul unde am declarat si am citit tot ce aveau nevoie.
